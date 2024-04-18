@@ -5,17 +5,17 @@
   "theme_color": "#c3d7ee",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#c3d7ee",
+  "background_color": "",
   "lang": "pl",
   "description": "Sprawdź swoją wiedzę o ptakach, odgadnij ptaka po zdjęciu i śpiewie, odkryj cały atlas ptaków!",
   "icons": [
     {
-      "src": "src/assets/icon-512.png",
+      "src": "src/assets/placeholder-icon-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "src/assets/icon-512.png",
+      "src": "src/assets/placeholder-icon-512x512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
