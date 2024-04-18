@@ -11,8 +11,12 @@ export default function Question({
   return (
     <div>
       <img
-        src={isImageHidden ? "src/assets/placeholder-bird.jpg" : bird.imageURL}
-        alt={bird.commonName}
+        src={
+          isImageHidden
+            ? "src/assets/placeholder-bird-512x512.jpg"
+            : bird.imageURL
+        }
+        alt="Sylwetka ptaka"
         className="quiz-container__image"
         style={{
           minWidth: "400px",
