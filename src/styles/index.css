@@ -11,13 +11,13 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  color-scheme: light dark;
+  color: #fff;
   background-color: #c3d7ee;
   background-image: url("../assets/bg-doodle.svg");
 
@@ -141,7 +141,6 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    /* background-color: red; */
   }
   .quiz-container__description {
     width: 500px;
