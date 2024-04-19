@@ -12,9 +12,7 @@ export default function Question({
     <div>
       <img
         src={
-          isImageHidden
-            ? "src/assets/placeholder-bird-512x512.jpg"
-            : bird.imageURL
+          isImageHidden ? "public/placeholder-bird-512x512.jpg" : bird.imageURL
         }
         alt="Sylwetka ptaka"
         className="quiz-container__image"

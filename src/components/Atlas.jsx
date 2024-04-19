@@ -71,7 +71,7 @@ function BirdContainer({ bird }) {
       <div className="bird-container">
         <img
           className="bird-container--image"
-          src="src/assets/placeholder-bird.jpg"
+          src="public/placeholder-bird.jpg"
           alt="Dotychczas nieodkryty przez gracza ptak"
         />
         <div className="description">
