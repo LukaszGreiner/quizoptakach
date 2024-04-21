@@ -10,10 +10,11 @@ export default function StartScreen({ dispatch }) {
         <button className="btn" onClick={() => dispatch({ type: "atlas" })}>
           Atlas
         </button>
-        <button className="btn" onClick={() => dispatch({ type: "save" })}>
-          Zapisz stan gry
-        </button>
-        <button className="btn" onClick={() => dispatch({ type: "resetSave" })}>
+        <button
+          style={{ backgroundColor: "#c53737" }}
+          className="btn"
+          onClick={() => dispatch({ type: "resetSave" })}
+        >
           Zresetuj stan gry i zacznij od nowa!
         </button>
       </div>

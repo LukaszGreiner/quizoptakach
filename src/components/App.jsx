@@ -68,11 +68,15 @@ function reducer(state, action) {
       return {
         ...state,
       };
-    case "resetSave":
-      localStorage.setItem("QUIZ_SAVE", JSON.stringify(defaultValues));
+    case "resetSave": {
+      const reset = window.confirm("Czy zresetować cały postęp quizu?");
+      if (reset)
+        localStorage.setItem("QUIZ_SAVE", JSON.stringify(defaultValues));
+      const newState = reset ? defaultValues : state;
       return {
-        ...defaultValues,
+        ...newState,
       };
+    }
     case "atlas":
       return {
         ...state,
