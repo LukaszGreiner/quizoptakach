@@ -15,6 +15,7 @@ export default function Options({
           isDisabled={hasAnswered}
           onClick={(e) => {
             dispatch({ type: "newAnswer", payload: option });
+            dispatch({ type: "save" });
             e.target.className += " option--incorrect";
           }}
           className={
