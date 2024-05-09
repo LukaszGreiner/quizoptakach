@@ -1,11 +1,11 @@
 {
   "name": "Quiz o ptakach",
   "short_name": "PtakQuiz",
-  "start_url": "./",
+  "start_url": ".",
   "theme_color": "#c3d7ee",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "",
+  "background_color": "#c3d7ee",
   "lang": "pl",
   "description": "Sprawdź swoją wiedzę o ptakach, odgadnij ptaka po zdjęciu i śpiewie, odkryj cały atlas ptaków!",
   "icons": [

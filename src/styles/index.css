@@ -58,6 +58,10 @@ h1 {
   transition: border-color 0.25s;
 }
 
+.btn--danger {
+  background-color: #c53737;
+}
+
 .btn:hover {
   background-color: #1a1a1ad8;
   transition: all 0.25s ease-in-out;

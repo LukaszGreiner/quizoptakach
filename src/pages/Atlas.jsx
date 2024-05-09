@@ -1,8 +1,11 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
+import { useQuizContext } from "../contexts/QuizContext";
+import birdAltImg from "../assets/placeholder-bird-512x512.jpg";
 import "../styles/atlas.css";
 
-export default function Atlas({ data, dispatch }) {
+export default function Atlas() {
+  const { atlasData: data, dispatch } = useQuizContext();
   const [filter, setFliter] = useState("all");
 
   const filterData = (data, filter) => {
@@ -28,8 +31,12 @@ export default function Atlas({ data, dispatch }) {
   return (
     <>
       <nav className="atlas-nav">
-        <button onClick={() => dispatch({ type: "start" })}>Quiz</button>
-        <button onClick={() => dispatch({ type: "mainMenu" })}>
+        <button onClick={() => dispatch({ type: "setPage", payload: "quiz" })}>
+          Quiz
+        </button>
+        <button
+          onClick={() => dispatch({ type: "setPage", payload: "homepage" })}
+        >
           Menu główne
         </button>
       </nav>
@@ -71,7 +78,7 @@ function BirdContainer({ bird }) {
       <div className="bird-container">
         <img
           className="bird-container--image"
-          src="public/placeholder-bird.jpg"
+          src={birdAltImg}
           alt="Dotychczas nieodkryty przez gracza ptak"
         />
         <div className="description">

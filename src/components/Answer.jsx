@@ -1,5 +1,10 @@
+import { useQuizContext } from "../contexts/QuizContext";
+
 /* eslint-disable react/prop-types */
-export default function Answer({ bird }) {
+export default function Answer() {
+  const { bird } = useQuizContext();
+  console.log(bird);
+
   return (
     <>
       <a href={bird.postURL} target="_blank">
@@ -15,6 +20,7 @@ export default function Answer({ bird }) {
           }}
         />
       </a>
+
       <div className="quiz-container__description">
         <h2>{bird.commonName}</h2>
         <i>{bird.scientificName}</i>

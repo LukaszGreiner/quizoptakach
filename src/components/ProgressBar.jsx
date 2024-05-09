@@ -1,15 +1,36 @@
+import { useQuizContext } from "../contexts/QuizContext";
+import Button from "./Button";
+
 /* eslint-disable react/prop-types */
-export default function ProgressBar({
-  numQuestion = 1,
-  totalQuestions,
-  children,
-}) {
+export default function ProgressBar() {
+  const {
+    numQuestion = 1,
+    totalQuestions,
+    hasAnswered,
+    dispatch,
+  } = useQuizContext();
+
   return (
     <header className="progress">
-      <p>
-        Co to za ptak?
-        <div className="progress__buttons">{children}</div>
-      </p>
+      <p>Co to za ptak?</p>
+      <div className="progress__buttons">
+        <Button onClick={() => dispatch({ type: "setPage", payload: "atlas" })}>
+          Atlas
+        </Button>
+        <Button
+          onClick={() => dispatch({ type: "setPage", payload: "homepage" })}
+        >
+          Menu główne
+        </Button>
+        <Button
+          onClick={() => {
+            hasAnswered && dispatch({ type: "nextQuestion" });
+          }}
+          isDisabled={!hasAnswered}
+        >
+          Dalej
+        </Button>
+      </div>
       <div>
         <span>
           Pytanie {numQuestion}/{totalQuestions}

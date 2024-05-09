@@ -1,12 +1,9 @@
 /* eslint-disable react/prop-types */
+import { useQuizContext } from "../contexts/QuizContext";
 import Button from "./Button";
 
-export default function Options({
-  options,
-  dispatch,
-  hasAnswered,
-  correctAnswer,
-}) {
+export default function Options() {
+  const { options, dispatch, hasAnswered, correctAnswer } = useQuizContext();
   return (
     <div className="quiz-container__options">
       {options.map((option) => (

@@ -1,19 +1,22 @@
 /* eslint-disable react/prop-types */
 import { useRef } from "react";
+import { useQuizContext } from "../contexts/QuizContext";
+import birdAltImg from "../assets/placeholder-bird-512x512.jpg";
 
-export default function Question({
-  bird,
-  dispatch,
-  isAutoPlay = false,
-  isImageHidden,
-}) {
+export default function Question() {
+  const {
+    bird,
+    dispatch,
+    isAutoPlay = false,
+    isImageHidden,
+  } = useQuizContext();
+  console.log(bird);
+
   const audioRef = useRef();
   return (
     <div>
       <img
-        src={
-          isImageHidden ? "public/placeholder-bird-512x512.jpg" : bird.imageURL
-        }
+        src={isImageHidden ? birdAltImg : bird.imageURL}
         alt="Sylwetka ptaka"
         className="quiz-container__image"
         style={{
