@@ -2,7 +2,7 @@ import Button from "../components/Button";
 import { useQuizContext } from "../contexts/QuizContext";
 
 /* eslint-disable react/prop-types */
-export default function StartScreen() {
+export default function Homepage() {
   const { atlasData, totalQuestions, dispatch } = useQuizContext();
 
   const numKnown = atlasData.reduce(
