@@ -10,6 +10,11 @@
   "description": "Sprawdź swoją wiedzę o ptakach, odgadnij ptaka po zdjęciu i śpiewie, odkryj cały atlas ptaków!",
   "icons": [
     {
+      "src": "public/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
       "src": "public/placeholder-icon-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
