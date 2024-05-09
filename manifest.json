@@ -1,7 +1,7 @@
 {
   "name": "Quiz o ptakach",
   "short_name": "PtakQuiz",
-  "start_url": ".",
+  "start_url": "./",
   "theme_color": "#c3d7ee",
   "display": "standalone",
   "orientation": "portrait",
