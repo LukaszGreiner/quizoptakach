@@ -10,7 +10,9 @@ Uzupełnij swój atlas aż <b>113</b> rodzimymi gatunkami!
 <br/>
 https://quizoptakach.netlify.app
 
-![quizoptakach](https://github.com/user-attachments/assets/a0f60761-8181-4176-adb1-441fe7a418a0)
+
+<img src="https://github.com/user-attachments/assets/f1ba9267-cbad-474f-a037-9e9873e254aa" alt="Quiz o ptakach gif" height="800px"/>
+
 ## Screenshots
 
 <img src="https://github.com/user-attachments/assets/d0ffbd10-ab03-496e-acd8-fe12b3462337" alt="Ekran głównych Quiz o ptakach" height="400px"/>
